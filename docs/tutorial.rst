@@ -84,6 +84,13 @@ See the FAQ at :ref:`faq-tests-not-being-picked-up` for more infos.
 
     python_files = tests.py test_*.py *_tests.py
 
+If you use ``pyproject.toml``, add the following line to the 
+``[tool.pytest.ini_options]`` section instead:
+
+.. code-block:: toml
+
+    python_files = ["tests.py" , "test_*.py", "*_tests.py"]
+
 Step 3: Run your test suite
 ---------------------------
 
